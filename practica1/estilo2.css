@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+  }
+
+
+/*Dividir el contenido en dos*/
+.leftcolumn{
+    float: left;
+    width: 70%;
+}
+
+.rightcolumn{
+    float: right;
+    width: 30%;
+    padding-left: 1.5em;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  
+header{
+  padding-left: 1em;
+  padding-bottom: 1em;
+  padding-right: 1em;
+}
+
+h2{
+  padding-left: 1em;
+}
+footer{
+padding-top: 1em;
+text-align: center;
+}
+
+.fimg {
+  width: 100%;
+  padding: 20px;
+}
+
+body{
+  margin:2em;
+}
+
+p, ul, table, h4{
+  margin-left: 3em;
+  margin-right: 3em;
+}
+section{
+  padding:1em;
+}
