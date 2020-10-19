@@ -1,21 +1,22 @@
+/* a=0 b=0 c=0 -> specificity = 0*/
 * {
     box-sizing: border-box;
   }
 
 
 /*Dividir el contenido en dos*/
+/* a=0 b=1 c=0 -> specificity = 10*/
 .leftcolumn{
     float: left;
-    width: 70%;
+    width: 75%;
 }
-
+/* a=0 b=1 c=0 -> specificity = 10*/
 .rightcolumn{
     float: right;
-    width: 30%;
-    padding-left: 1.5em;
+    width: 25%;
 }
 
-/* Clear floats after the columns */
+/* a=0 b=1 c=1 -> specificity = 11*/
 .row:after {
     content: "";
     display: table;
@@ -23,48 +24,58 @@
 }
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
+  /* a=0 b=0 c=1 -> specificity = 1*/
     .leftcolumn, .rightcolumn {   
-      width: 100%;
+      width: auto;
       padding: 0;
     }
   }
   
   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
   @media screen and (max-width: 400px) {
+    /* a=0 b=1 c=1 -> specificity = 11*/
     .topnav a {
       float: none;
-      width: 100%;
+      width: auto;
     }
   }
 
-  
+/* a=0 b=0 c=1 -> specificity = 1*/
 header{
   padding-left: 1em;
   padding-bottom: 1em;
   padding-right: 1em;
 }
 
+/* a=0 b=0 c=1 -> specificity = 1*/
 h2{
   padding-left: 1em;
 }
+
+/* a=0 b=0 c=1 -> specificity = 1*/
 footer{
 padding-top: 1em;
 text-align: center;
 }
 
+/* a=0 b=1 c=0 -> specificity = 10*/
 .fimg {
   width: 100%;
   padding: 20px;
 }
 
+/* a=0 b=0 c=1 -> specificity = 1*/
 body{
   margin:2em;
 }
 
+/* a=0 b=0 c=1 -> specificity = 1*/
 p, ul, table, h4{
   margin-left: 3em;
   margin-right: 3em;
 }
+
+/* a=0 b=0 c=1 -> specificity = 1*/
 section{
   padding:1em;
 }

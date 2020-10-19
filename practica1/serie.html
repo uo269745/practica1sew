@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="author" content="Paula Suárez Prieto">
     <meta name="description" content="practica1">
-    <meta name="keywords" content="terminator,Schwarzenegger,James Cameron,pelicula">
-    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <meta name="keywords" content="terminator,Schwarzenegger,James Cameron,pelicula,máquinas">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css" >
     <link rel="stylesheet" type="text/css" href="estilo2.css">
+    <link rel="stylesheet" type="text/css" href="estiloSerie.css" >
     <title>The Terminator: Películas</title>
 </head>
 <body>
@@ -16,38 +18,40 @@
         <h1>The Terminator</h1> 
         <nav id="navBar">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="resumen.html">Resumen</a></li>
-                <li><a href="doblaje.html">Doblaje</a></li>
-                <li><a class="active" href="serie.html">Serie cinematográfica</a></li>
-                <li><a href="videojuegos.html">Videojuegos</a></li>
+                <li><a  tabindex= "1" accesskey="I" href="index.html">Inicio</a></li>
+                <li><a  tabindex= "2" accesskey="R" href="resumen.html">Resumen</a></li>
+                <li><a  tabindex= "3" accesskey="D" href="doblaje.html">Doblaje</a></li>
+                <li><a class="active"  tabindex= "4" accesskey="S" href="serie.html">Serie cinematográfica</a></li>
+                <li><a  tabindex= "5" accesskey="V" href="videojuegos.html">Videojuegos</a></li>
             </ul>
         </nav>
         <h2>Serie cinematográfica</h2>
     </header>
 
-    <section class="row">
+    <section>
     <h3>The Terminator (1984)</h3>
-        <div class="leftcolumn">
+        <p class=formatoimagen><img alt = "Portada película 'The Terminator', 1984."  title="The Terminator" src = "multimedia/portada1.jpg"/></p>
         <p> En el año 1984 se estrena la primera película, <em>The Terminator</em>, el primer gran éxito de la saga. 
-        Escrita y dirigida por James Cameron y protagonizada por Arnold Schwarzenegger, Linda Hamilton y Michael Biehn.</p>
+        Escrita y dirigida por James Cameron y protagonizada por Arnold Schwarzenegger como Terminator, Linda Hamilton como Sarah Connor
+         y Michael Biehn como Kyle Reese.</p>
+         <p>Fue un gran éxito de taquilla que dio inicio a una franquicia que consta de varias secuelas, 
+             una serie de televisión, cómics, novelas y <a href="videojuegos.html">videojuegos</a>.</p>
     
         <h4>Sinopsis</h4>
         <p>Puedes leer la sinopsis haciendo click <a href="resumen.html">aquí</a>.</p>
-        <p>
+        
+        <p class=formatovideo>
         <video controls>
             <source src="multimedia/trailer1.mp4" type="video/mp4">
         </video>
         </p>
-    </div>
-        <div class="rightcolumn">
-            <img alt = "Portada película 'The Terminator', 1984."  title="The Terminator" src = "multimedia/portada1.jpg"/>
-        </div>
+   
+        
     </section>
     
-    <section class="row">
+    <section>
         <h3>Terminator 2: El juicio final (1991)</h3>
-        <div class="leftcolumn">
+        <p> <img alt = "Portada película 'Terminator 2', 1991."  title="Terminator 2" src = "multimedia/portada2.jpg"/></p>
             <p> <em>Terminator 2: El juicio final</em> es la secuela de 1991 de la película original de Terminator. Escrita,
             dirigida y producida por James Cameron y protagonizada por Arnold Schwarzenegger, Linda Hamilton, Edward 
             Furlong y Robert Patrick.</p>
@@ -58,20 +62,16 @@
             adolescente, un Terminator reprogramado, idéntico al Terminator de la película anterior. Después 
             de diez años preparándose para la futura guerra, Sarah decide utilizar la misma táctica que las 
             máquinas utilizaron en ella: evitar que Skynet sea creada destruyendo Cyberdyne Systems antes de que la inventen.</p>
-            <p>
+            <p class=formatovideo>
                 <video controls>
                 <source src="multimedia/trailer2.mp4" type="video/mp4">
                 </video>
             </p>
-        </div>
-            <div class="rightcolumn">
-                <img alt = "Portada película 'Terminator 2', 1991."  title="Terminator 2" src = "multimedia/portada2.jpg"/>
-            </div>
         
     </section>
-    <section class="row">
+    <section>
         <h3>Terminator 3: La rebelión de las máquinas (2003)</h3>
-        <div class="leftcolumn">
+        <p><img alt = "Portada película 'Terminator 3', 2003."  title="Terminator 3" src = "multimedia/portada3.jpg"/></p>
             <p> <em>Terminator 3: La rebelión de las máquinas</em> es una película de ciencia ficción de 2003 
                 escrita por John D. Brancato y Michael Ferris y dirigida por Jonathan Mostow.</p>
         <h4>Sinopsis</h4>
@@ -80,21 +80,18 @@
                 más inteligente, fuerte y rápida de lo que lo ha sido cualquier exterminador. A su vez un T-850 es enviado para 
                 protegerlo a él y a Katherine Brewster.
             </p>
-            <p>
+            <p class=formatovideo>
                 <video controls>
                 <source src="multimedia/trailer3.mp4" type="video/mp4">
                 </video>
             </p>
-        </div>
-            <div class="rightcolumn">
-                <img alt = "Portada película 'Terminator 3', 2003."  title="Terminator 3" src = "multimedia/portada3.jpg"/>
-            </div>
+                
         
     </section>
 
-    <section class="row">
+    <section>
         <h3>Terminator Salvation (2009)</h3>
-        <div class="leftcolumn">
+            <p><img alt = "Portada película 'Terminator Salvation', 2009."  title="Terminator Salvation" src = "multimedia/portada4.jpg"/></p>
             <p> <em>Terminator Salvation</em> es la cuarta película de la franquicia <em>Terminator</em> 
                 escrita por John D. Brancato y Michael Ferris y dirigida por Joseph McGinty Nichol.</p>
         <h4>Sinopsis</h4>
@@ -104,21 +101,18 @@
                 Connor debe averiguar si Marcus ha sido enviado desde el futuro o rescatado del pasado. Mientras, la Resistencia prepara el ataque final contra 
                 el centro de operaciones de Skynet.
             </p>
-            <p>
+            <p class=formatovideo>
                 <video controls>
                 <source src="multimedia/trailer4.mp4" type="video/mp4">
                 </video>
             </p>
-        </div>
-            <div class="rightcolumn">
-                <img alt = "Portada película 'Terminator Salvation', 2009."  title="Terminator Salvation" src = "multimedia/portada4.jpg"/>
-            </div>
-        
+                
+           
     </section>
     
-    <section class="row">
+    <section>
         <h3>Terminator Génesis (2015)</h3>
-        <div class="leftcolumn">
+            <p> <img alt = "Portada película 'Terminator Génesis', 2015."  title="Terminator Génesis" src = "multimedia/portada5.jpg"/></p>
             <p> <em>Terminator Salvation</em> es la quinta entrega de esta franquicia 
                 escrita por Patrick Lussier y Laeta Kalogridis y dirigida por Alan Taylor.</p>
         <h4>Sinopsis</h4>
@@ -129,20 +123,17 @@
                 Sarah (Emilia Clarke) de un Terminator programado para matarla con el fin de que no llegue a dar a luz a John. 
                 Pero lo que Reese encuentra en el otro lado no es como él esperaba...
             </p>
-            <p>
+            <p class=formatovideo>
                 <video controls>
                 <source src="multimedia/trailer5.mp4" type="video/mp4">
                 </video>
             </p>
-        </div>
-            <div class="rightcolumn">
-                <img alt = "Portada película 'Terminator Génesis', 2015."  title="Terminator Génesis" src = "multimedia/portada5.jpg"/>
-            </div>
-        
+               
+            
     </section>
-    <section class="row">
+    <section>
         <h3>Terminator: Destino oscuro (2019)</h3>
-        <div class="leftcolumn">
+            <p> <img alt = "Portada película 'Terminator: Destino oscuro', 2019."  title="Terminator: Destino oscuro" src = "multimedia/portada6.jpg"/></p>
             <p> <em>Terminator Salvation</em> Es la sexta entrega de la franquicia de películas de Terminator, 
                 y actúa como una secuela directa de The Terminator (1984) y Terminator 2: el juicio final (1991), 
                 sin tener en cuenta el resto de películas. dirigida por Tim Miller, a partir de un guion de David Goyer, 
@@ -154,15 +145,12 @@
                 nuevo y poderoso Terminator (Gabriel Luna), recién modificado del futuro. En su camino además recibirán la ayuda del 
                 modelo T-800 (Arnold Schwarzenegger).
             </p>
-            <p>
+            <p class=formatovideo>
                 <video controls>
                 <source src="multimedia/trailer6.mp4" type="video/mp4">
                 </video>
             </p>
-        </div>
-            <div class="rightcolumn">
-                <img alt = "Portada película 'Terminator: Destino oscuro', 2019."  title="Terminator: Destino oscuro" src = "multimedia/portada6.jpg"/>
-            </div>
+               
         
     </section>
     <footer>Creado por Paula Suárez Prieto a 28/09/2020. </footer>

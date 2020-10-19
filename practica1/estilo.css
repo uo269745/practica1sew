@@ -1,6 +1,7 @@
 /*Propiedades de los títulos*/
+/* a=0 b=0 c=1 -> specificity = 1*/
 h1{
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: Impact, sans-serif;
     font-size: 3em;
     color: #fff;
     border-style: inset;
@@ -9,7 +10,7 @@ h1{
     text-align: center;  
     text-shadow: 5px 5px 8px maroon;
 }
-
+/* a=0 b=0 c=1 -> specificity = 1*/
 h2{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -17,7 +18,7 @@ h2{
     text-align: left;
     font-size: 1.5em;
 }
-
+/* a=0 b=0 c=1 -> specificity = 1*/
 h3{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
@@ -29,6 +30,7 @@ h3{
 }
 
 /*Propiedades body*/
+/* a=0 b=0 c=1 -> specificity = 1*/
 body{
     background-color:black;
     font-family: Arial, Helvetica, sans-serif;
@@ -40,24 +42,25 @@ body{
     background-position: center;
     background-size: 80%;
 }
-
+/* a=0 b=0 c=1 -> specificity = 1*/
 section, header, footer{
     background-color: rgb(30,30,30,0.6);
 }
 
 /*Propiedades menú de navegación*/
+/* a=1 b=0 c=1 -> specificity = 101*/
 #navBar ul{
     list-style-type: none;
     overflow: hidden;
     margin:0;
     padding:0;
-    /*background-color: rgb(20,20,20);*/
 }
-
+/* a=1 b=0 c=1 -> specificity = 101*/
 #navBar li{
     float:left;
 }
 
+/* a=1 b=0 c=2 -> specificity = 102*/
 #navBar li a{
     display: block;
     color: white;
@@ -65,60 +68,77 @@ section, header, footer{
     padding: 0.75em 0.75em;
     text-decoration: none;
 }
-
+/* a=1 b=1 c=2 -> specificity = 112*/
 #navBar li a:hover{
     background-color: maroon;
 }
-
+/* a=0 b=1 c=0 -> specificity = 10*/
 .active{
     background-color: maroon;
 }
 
-/*Propiedades imagen inicio*/
+/* a=0 b=0 c=1 -> specificity = 1*/
 img{
-    height: 22em;
+    max-width: 100%;
+    max-height: 22em;
+    height: auto;
 }
-video{
-    width: 50em;
-}
-
+/* a=0 b=1 c=0 -> specificity = 10*/
 .formatoimg{
     text-align: center;
 }
 
+/* a=0 b=0 c=1 -> specificity = 1*/
 em{
     font-weight: bold;
     font-style: italic;
 }
+/* a=0 b=0 c=1 -> specificity = 1*/
 ul{
     list-style-type: square;
     text-align: center;
     list-style-position: inside;
 }
-#listaindex{
-    text-align: left;
-}
+/* a=0 b=0 c=1 -> specificity = 1*/
+a{color:white;}
+/* a=0 b=1 c=1 -> specificity = 11*/
+a:visited{color:white;}
+/* a=0 b=1 c=1 -> specificity = 11*/
+a:hover{color:red}
 
-a{color:white;
-}
 
 /*Propiedades de la tabla*/
+/* a=1 b=0 c=0 -> specificity = 100*/
 #table1 {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    width: 80%;
+    width: 90%;
   }
-  
-  #table1 td, #table1 th {
+/* a=1 b=0 c=1 -> specificity = 101*/
+#table1 td, #table1 th {
     border: 1px solid white;
     padding: 12px;
   }
   
-  
-  #table1 tr:hover {background-color: rgb(50,50,50);}
-  
-  #table1 th {
+ /* a=1 b=1 c=1 -> specificity = 111*/ 
+#table1 tr:hover {background-color: rgb(50,50,50);}
+
+/* a=1 b=0 c=1 -> specificity = 101*/
+#table1 th {
     text-align: center;
     background-color: maroon;
   }
   
+/*Estilo para las secciones de index.html*/
+/* a=1 b=0 c=0 -> specificity = 100*/
+#section1{
+    background: none;
+}
+/* a=1 b=0 c=1 -> specificity = 101*/
+#section1 ul{
+    text-align: left;
+}
+/* a=0 b=1 c=1 -> specificity = 11*/
+div.row{
+    background-color: rgb(30,30,30,0.6);
+}

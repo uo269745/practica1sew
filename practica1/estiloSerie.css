@@ -1,0 +1,25 @@
+/* a=0 b=0 c=1 -> specificity = 1*/
+img{
+    max-width: 100%;
+    max-height: 18em;
+    height: auto;
+    float: right;
+    left:1em;
+}
+
+/* a=0 b=1 c=0 -> specificity = 10*/
+.formatovideo{
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 1.875em;
+    position: relative;
+}
+/* a=0 b=1 c=1 -> specificity = 11*/
+.formatovideo video{
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
