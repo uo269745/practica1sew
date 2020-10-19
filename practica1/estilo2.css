@@ -43,11 +43,9 @@
       margin-top: 0em;
       margin-right: 0em;
       text-align: left;
-      background: none;
-      color: maroon;
     }
-    table{
-      width: auto;
+    #table1{
+      width:auto;
     }
   }
 
