@@ -39,7 +39,12 @@
       width: auto;
     }
     h3{
-      margin:0;
+      margin-left: 0em;
+      margin-top: 0em;
+      margin-right: 0em;
+      text-align: left;
+      background: none;
+      color: maroon;
     }
     table{
       width: auto;
